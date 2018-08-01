@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 class Product{
     
     var id:Int

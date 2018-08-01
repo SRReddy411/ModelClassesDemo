@@ -25,20 +25,12 @@ class RegisterUserData: NSObject {
     var paidStatus: Int!
     var gender: Int!
     var profileId: String!
-    //    var email : String!
-    //    var teamid: String!
-    //    var teamInviteStatusStr: String!
-    //    var team_matches_played = ""
-    //    var team_typeId = ""
-    //    var team_lat = ""
-    //    var team_long = ""
-    //    var team_chat_id = ""
     
+
     init(data : NSDictionary) {
-        // print(" data %@", data)
+     
         if let _email = data["email"]{
             self.email = _email as! String
-            //print("uesrname%@", _email)
         }
         
         if let _userDesc = data["DateOfBirth"]{

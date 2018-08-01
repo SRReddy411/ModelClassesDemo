@@ -23,18 +23,11 @@ public protocol NetworkDelegate{
     ///   - requestType: Type of request
     func failureResponse(response:Any, ForRequestType requestType:Int)
 }
+
 enum RequestType : Int
 {
-    case LOGIN_REQ
     case SIGNUP_REQ
-    case FORGOTPWD_REQ
     case GETPRODUCTS_REQ
-    case RETRIEVEPRODUCT_REQ
-    case SENDADDRESS_REQ
-    case CREATEORDER_REQ
-    case GETALLORDERS_REQ
-    case GETCUSTOMERDETAILS_REQ
-    case UPDATECUSTOMERDETAILS_REQ
     case REGISTRATIONDETAILS_REQ
 }
 class Helper: NSObject {
@@ -42,8 +35,15 @@ class Helper: NSObject {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     public var delegate:NetworkDelegate?
     
+    /// age information in the form of array
     var ageToData: [String]   = ["18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77"]
     
+    /// Called when user select gender option
+    ///
+    /// - Parameters:
+    ///   - male: if sender select gender
+    ///   - female:if sender select gender
+    /// - Returns:  int value
     func getgenderValue(male: Bool,female: Bool)->Int{
         
         if female {
@@ -55,6 +55,7 @@ class Helper: NSObject {
             return 0
         }
     }
+
     func getReligionId(title:String) -> String {
         switch title {
         case "0":
@@ -77,6 +78,11 @@ class Helper: NSObject {
             return ""
         }
     }
+    
+    /// Called when user register
+    ///
+    /// - Parameter input: input parameters for register
+    
     public func registrationDetails(input:[String:Any]){
         self.postRequestToServer(urlString: Constants.REGISTRATION_DETAILS_URL, input: input as NSDictionary, forType: RequestType.REGISTRATIONDETAILS_REQ.rawValue)
     }

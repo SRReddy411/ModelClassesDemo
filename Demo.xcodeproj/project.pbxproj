@@ -17,6 +17,7 @@
 		FD05FA1C21117A8600CA96C1 /* SampleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD05FA1B21117A8600CA96C1 /* SampleArray.swift */; };
 		FD05FA1E21117B4500CA96C1 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD05FA1D21117B4500CA96C1 /* Register.swift */; };
 		FD05FA21211180F300CA96C1 /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD05FA20211180F300CA96C1 /* HelperExtensions.swift */; };
+		FD05FA7C2111EBC400CA96C1 /* Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD05FA7B2111EBC400CA96C1 /* Basic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FD05FA1B21117A8600CA96C1 /* SampleArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleArray.swift; sourceTree = "<group>"; };
 		FD05FA1D21117B4500CA96C1 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		FD05FA20211180F300CA96C1 /* HelperExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
+		FD05FA7B2111EBC400CA96C1 /* Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				FD05FA1B21117A8600CA96C1 /* SampleArray.swift */,
 				FD05FA17211173F900CA96C1 /* Helper.swift */,
 				FD05FA20211180F300CA96C1 /* HelperExtensions.swift */,
+				FD05FA7B2111EBC400CA96C1 /* Basic.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD05FA7C2111EBC400CA96C1 /* Basic.swift in Sources */,
 				FD05FA21211180F300CA96C1 /* HelperExtensions.swift in Sources */,
 				FD05FA1E21117B4500CA96C1 /* Register.swift in Sources */,
 				FD05FA08211173C500CA96C1 /* ViewController.swift in Sources */,
